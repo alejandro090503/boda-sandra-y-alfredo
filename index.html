@@ -256,7 +256,11 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:600;color:var(--gold)}
 .date-eyebrow{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:.6em;text-transform:uppercase;color:var(--gold-soft);padding-left:.6em;margin-bottom:28px;display:inline-block;}
 .date-h{font-family:var(--display);font-weight:500;font-size:clamp(42px,6.5vw,82px);color:#F8F5EC;letter-spacing:-.015em;margin-bottom:12px;}
 .date-h em{color:var(--gold-soft)}
-.date-numbers{display:flex;justify-content:center;align-items:flex-start;gap:clamp(24px,6vw,80px);font-variant-numeric:tabular-nums;margin:56px 0 28px;}
+.date-numbers{display:flex;justify-content:center;align-items:flex-start;gap:clamp(16px,4vw,80px);font-variant-numeric:tabular-nums;margin:56px 0 28px;flex-wrap:wrap;row-gap:24px;}
+@media(max-width:480px){
+  .date-num{font-size:clamp(42px,11vw,68px)!important}
+  .date-block + .date-block::before{left:calc(-1 * clamp(16px,4vw,80px) / 2)}
+}
 .date-block{text-align:center;position:relative}
 .date-block + .date-block::before{content:"·";position:absolute;left:calc(-1 * clamp(24px,6vw,80px) / 2);top:40%;transform:translateX(-50%);color:var(--gold-soft);font-size:30px;}
 .date-num{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(68px,10vw,124px);line-height:1;color:#F8F5EC;}
@@ -418,7 +422,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:600;color:var(--gold)}
   margin-left:auto;
 }
 .itin-time{font-family:var(--italiana);font-size:19px;letter-spacing:.18em;color:var(--gold);display:block;line-height:1.2;font-weight:400;text-shadow:0 1px 8px rgba(201,160,68,.35);}
-.itin-ev{font-family:var(--sans);font-weight:600;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);line-height:1.55;margin-top:3px;overflow-wrap:break-word;word-break:break-word;hyphens:auto;}
+.itin-ev{font-family:var(--sans);font-weight:600;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink);line-height:1.65;margin-top:3px;overflow-wrap:normal;word-break:normal;hyphens:none;}
 .itin-sub{font-family:var(--serif);font-style:italic;font-size:11.5px;color:var(--ink-soft);margin-top:2px;line-height:1.4;}
 @media(max-width:380px){
   .itin-ev{font-size:9px;letter-spacing:.12em;}
@@ -779,7 +783,7 @@ footer{background:linear-gradient(160deg,#e8ecf4 0%,#f0f2f8 30%,#f5f0e5 65%,#f5e
   <div class="vinyl-spin">
     <div class="vinyl-disc">
       <div class="vinyl-sheen"></div>
-      <div class="vinyl-label-text">A&amp;S<small>2026</small></div>
+      <div class="vinyl-label-text">S&amp;A<small>2026</small></div>
       <div class="vinyl-hole"></div>
     </div>
   </div>
@@ -839,7 +843,7 @@ footer{background:linear-gradient(160deg,#e8ecf4 0%,#f0f2f8 30%,#f5f0e5 65%,#f5e
         </div>
         <p class="verse-text">Uno solo puede ser vencido, pero dos pueden resistir. ¡La cuerda de tres hilos no se rompe fácilmente!</p>
         <span class="verse-ref">Eclesiastés 4:12 NVI</span>
-        <span class="verse-sig">A &amp; S</span>
+        <span class="verse-sig" style="font-family:var(--italiana);font-size:32px;letter-spacing:.18em;">S &amp; A</span>
       </div>
     </div>
   </section>
@@ -874,7 +878,7 @@ footer{background:linear-gradient(160deg,#e8ecf4 0%,#f0f2f8 30%,#f5f0e5 65%,#f5e
 
   <!-- FAMILIA -->
   <section class="section-surface familia">
-    <span class="mono-wm" aria-hidden="true">A &amp; S</span>
+    <span class="mono-wm" aria-hidden="true">S &amp; A</span>
     <div class="container">
       <p style="font-family:var(--display);font-style:italic;font-size:clamp(17px,2.2vw,24px);text-align:center;color:var(--accent-deep);line-height:1.55;max-width:600px;margin:0 auto 40px;">Con mucha ilusión y con la bendición de <strong>DIOS</strong> y de nuestros amados padres</p>
       <h2>Nuestras <em>Familias</em></h2>
@@ -990,7 +994,7 @@ footer{background:linear-gradient(160deg,#e8ecf4 0%,#f0f2f8 30%,#f5f0e5 65%,#f5e
 
   <!-- ITINERARIO -->
   <section id="siti" style="padding:min(8vh,72px) 0 min(10vh,90px)">
-    <span class="mono-wm" aria-hidden="true">A &amp; S</span>
+    <span class="mono-wm" aria-hidden="true">S &amp; A</span>
     <div class="itv3-orb" style="width:300px;height:300px;top:5%;left:-80px;background:radial-gradient(circle,rgba(201,160,68,.07),transparent 70%);"></div>
     <div class="itv3-orb" style="width:240px;height:240px;bottom:8%;right:-60px;background:radial-gradient(circle,rgba(186,222,255,.08),transparent 70%);"></div>
     <div class="container">
@@ -1051,7 +1055,20 @@ footer{background:linear-gradient(160deg,#e8ecf4 0%,#f0f2f8 30%,#f5f0e5 65%,#f5e
             <div class="itin-ev">¡A Celebrar Juntos!</div>
           </div>
           <div class="itin-icon-wrap">
-            <svg viewBox="0 0 24 24"><path d="M8 7l4-4 4 4"/><path d="M12 3v8"/><path d="M5 12c0 4 3 8 7 9 4-1 7-5 7-9"/><line x1="5" y1="12" x2="3" y2="8"/><line x1="19" y1="12" x2="21" y2="8"/></svg>
+            <svg viewBox="0 0 24 24">
+              <!-- copa izquierda -->
+              <path d="M5 2 L5 8 Q5 12 8 13 L8 17 L6 17 L6 19 L10 19 L10 17 L8 17"/>
+              <!-- copa derecha -->
+              <path d="M19 2 L19 8 Q19 12 16 13 L16 17 L18 17 L18 19 L14 19 L14 17 L16 17"/>
+              <!-- brindis: línea de choque -->
+              <line x1="9" y1="4" x2="15" y2="4" stroke-width="1.8"/>
+              <!-- burbuja izq -->
+              <circle cx="6.5" cy="5.5" r=".7" fill="currentColor" stroke="none"/>
+              <circle cx="7.5" cy="3.5" r=".5" fill="currentColor" stroke="none"/>
+              <!-- burbuja der -->
+              <circle cx="17.5" cy="5.5" r=".7" fill="currentColor" stroke="none"/>
+              <circle cx="16.5" cy="3.5" r=".5" fill="currentColor" stroke="none"/>
+            </svg>
           </div>
         </div>
 
@@ -1217,7 +1234,6 @@ footer{background:linear-gradient(160deg,#e8ecf4 0%,#f0f2f8 30%,#f5f0e5 65%,#f5e
   <section class="section-surface" style="padding:min(12vh,110px) 0 min(14vh,130px);text-align:center;" aria-label="Regalos">
     <div class="container">
       <div class="eyebrow rv">Regalos</div>
-      <h2 style="margin-bottom:16px;">Mesa de <em>Regalos</em></h2>
       <p style="font-family:var(--serif);font-size:clamp(15px,1.6vw,18px);color:var(--ink-soft);line-height:1.85;max-width:520px;margin:0 auto 52px;font-style:italic;">Tu presencia es nuestro mejor regalo, pero si deseas tener un detalle con nosotros, lo recibiremos con mucho cariño.</p>
 
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:36px;margin:0 auto;">
