@@ -247,7 +247,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:600;color:var(--gold)}
 .date-hero{position:relative;padding:min(12vh,110px) 0 min(18vh,175px);background:#0d1f3c;color:#F8F5EC;text-align:center;isolation:isolate;overflow:hidden;}
 .date-hero::after{
   content:"";position:absolute;inset:0;z-index:0;
-  background:linear-gradient(to bottom,rgba(13,31,60,.72) 0%,rgba(13,31,60,.42) 50%,rgba(13,31,60,.72) 100%),url('cabeza.jpeg') center 30%/cover no-repeat;
+  background:linear-gradient(to bottom,rgba(13,31,60,.8) 0%,rgba(13,31,60,.58) 50%,rgba(13,31,60,.8) 100%),url('manos-anillo.jpg') center 58%/cover no-repeat;
   mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.15) 15%,rgba(0,0,0,.55) 30%,black 42%,black 58%,rgba(0,0,0,.55) 70%,rgba(0,0,0,.15) 85%,transparent 100%);
   -webkit-mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.15) 15%,rgba(0,0,0,.55) 30%,black 42%,black 58%,rgba(0,0,0,.55) 70%,rgba(0,0,0,.15) 85%,transparent 100%);
   pointer-events:none;
@@ -266,9 +266,6 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:600;color:var(--gold)}
 .date-block + .date-block::before{content:"·";position:absolute;left:calc(-1 * clamp(24px,6vw,80px) / 2);top:40%;transform:translateX(-50%);color:var(--gold-soft);font-size:30px;}
 .date-num{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(68px,10vw,124px);line-height:1;color:#F8F5EC;}
 .date-lbl{font-family:var(--sans);font-size:11px;letter-spacing:.55em;text-transform:uppercase;color:rgba(248,245,236,.8);margin-top:18px;padding-left:.55em;font-weight:500;}
-.date-photo{margin:clamp(52px,8vh,84px) auto 0;max-width:330px;width:80%;aspect-ratio:4/5;border-radius:4px;overflow:hidden;position:relative;border:1px solid rgba(201,160,68,.5);box-shadow:0 26px 64px -22px rgba(0,0,0,.65);}
-.date-photo::after{content:"";position:absolute;inset:8px;border:1px solid rgba(201,160,68,.42);pointer-events:none;z-index:2;}
-.date-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 60%;display:block;filter:saturate(1.03) contrast(1.04);}
 .date-roman{font-family:var(--italiana);font-size:16px;letter-spacing:.4em;color:var(--gold-soft);margin-top:32px;padding-left:.4em;}
 
 /* ============ FAMILIA ============ */
@@ -907,7 +904,6 @@ footer{background:linear-gradient(160deg,#e8ecf4 0%,#f0f2f8 30%,#f5f0e5 65%,#f5e
           <div class="date-lbl">hrs</div>
         </div>
       </div>
-      <div class="date-photo"><img src="manos-anillo.jpg" alt="Sandra y Alfredo — anillo de compromiso" loading="lazy"></div>
     </div>
   </section>
 
@@ -1283,22 +1279,22 @@ footer{background:linear-gradient(160deg,#e8ecf4 0%,#f0f2f8 30%,#f5f0e5 65%,#f5e
     </div>
     <div class="wheel-scene rv" id="wheel-scene">
       <div class="wheel-ring" id="wheel-ring">
-        <div class="wheel-card"><img src="g1.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="m1.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="g2.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="m2.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="g5.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="m3.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="g6.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="m4.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="g7.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="m5.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="g8.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="m6.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="m7.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="m8.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="m9.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
-        <div class="wheel-card"><img src="m10.jpg" alt="Sandra y Alfredo" loading="lazy"></div>
+        <div class="wheel-card"><img src="g1.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 40%"></div>
+        <div class="wheel-card"><img src="m1.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 42%"></div>
+        <div class="wheel-card"><img src="g2.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 40%"></div>
+        <div class="wheel-card"><img src="m2.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 30%"></div>
+        <div class="wheel-card"><img src="g5.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 42%"></div>
+        <div class="wheel-card"><img src="m3.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 45%"></div>
+        <div class="wheel-card"><img src="g6.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 40%"></div>
+        <div class="wheel-card"><img src="m4.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:66% 42%"></div>
+        <div class="wheel-card"><img src="g7.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 42%"></div>
+        <div class="wheel-card"><img src="m5.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 50%"></div>
+        <div class="wheel-card"><img src="g8.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 38%"></div>
+        <div class="wheel-card"><img src="m6.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 50%"></div>
+        <div class="wheel-card"><img src="m7.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 36%"></div>
+        <div class="wheel-card"><img src="m8.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 72%"></div>
+        <div class="wheel-card"><img src="m9.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:50% 40%"></div>
+        <div class="wheel-card"><img src="m10.jpg" alt="Sandra y Alfredo" loading="lazy" style="object-position:58% 34%"></div>
       </div>
     </div>
     <p class="gal-hint">Arrastra para explorar</p>
