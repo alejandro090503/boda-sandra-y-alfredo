@@ -287,7 +287,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:600;color:var(--gold)}
 .section-paper.padrinos > .container{position:relative;z-index:1;}
 .padrinos{text-align:center}
 .padrinos h2{font-size:clamp(36px,5vw,60px);margin-bottom:20px}
-.padrinos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px;max-width:800px;margin:56px auto 0}
+.padrinos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;max-width:1000px;margin:56px auto 0}
 .padrino-card{background:var(--paper);padding:36px 28px;border:1px solid var(--hair-gold);text-align:center;position:relative;}
 .padrino-icon{margin:0 auto 18px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:var(--gold-deep)}
 .padrino-tipo{font-family:var(--sans);font-size:11px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold-deep);padding-left:.5em;margin-bottom:14px;font-weight:600}
@@ -936,17 +936,33 @@ footer{background:linear-gradient(160deg,#e8ecf4 0%,#f0f2f8 30%,#f5f0e5 65%,#f5e
       <div class="eyebrow">A nuestro lado</div>
       <h2>Nuestros <em>Padrinos</em></h2>
       <div class="padrinos-grid">
-        <div class="padrino-card">
+        <div class="padrino-card" data-tilt>
           <div class="padrino-icon">
-            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2 V22 M6 8 H18"/>
             </svg>
           </div>
-          <div class="padrino-tipo">Padrinos</div>
-          <div class="padrino-names" style="font-style:normal;font-size:16px;color:var(--ink-soft);letter-spacing:.04em;font-weight:500;">Por confirmar</div>
+          <div class="padrino-tipo">Ceremonia</div>
+          <div class="padrino-names">Getsemaní Gallardo Romero<br><span style="font-size:.8em;opacity:.6;font-style:normal;">y</span><br>Jorge Arturo Huerta García</div>
+        </div>
+        <div class="padrino-card" data-tilt>
+          <div class="padrino-icon">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="9" cy="13" r="6"/>
+              <circle cx="15" cy="13" r="6"/>
+            </svg>
+          </div>
+          <div class="padrino-tipo">Anillos</div>
+          <div class="padrino-names">María de Lourdes Yáñez Toledano<br><span style="font-size:.8em;opacity:.6;font-style:normal;">y</span><br>José Luis Flores Morales</div>
+        </div>
+        <div class="padrino-card" data-tilt>
+          <div class="padrino-icon">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 12 C3 8.5 7.5 8.5 12 12 C16.5 15.5 21 15.5 21 12 C21 8.5 16.5 8.5 12 12 C7.5 15.5 3 15.5 3 12 Z"/>
+            </svg>
+          </div>
+          <div class="padrino-tipo">Lazo</div>
+          <div class="padrino-names">María Isabel Martínez Zamora<br><span style="font-size:.8em;opacity:.6;font-style:normal;">y</span><br>Ricardo Yescas Romero</div>
         </div>
       </div>
     </div>
