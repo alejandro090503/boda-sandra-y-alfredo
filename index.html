@@ -472,6 +472,9 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:600;color:var(--gold)}
 .gallery-head{text-align:center;margin-bottom:24px;padding:0 26px;}
 .gallery h2{font-size:clamp(38px,5.5vw,60px);margin-bottom:40px;}
 .gallery-sub{font-family:var(--script);color:var(--gold);font-size:32px;line-height:1;}
+.album-qr-card{display:inline-flex;flex-direction:column;align-items:center;gap:22px;background:var(--bg);border:1px solid var(--hair-gold);padding:30px 30px 26px;position:relative;max-width:320px;}
+.album-qr-card::before{content:"";position:absolute;inset:8px;border:1px solid var(--hair-gold);opacity:.5;pointer-events:none;}
+.album-qr-card img{width:min(220px,58vw);height:auto;display:block;position:relative;}
 .gallery .eyebrow{color:var(--gold-deep);}
 /* ── GALERÍA RUEDA 3D ── */
 .wheel-scene{
@@ -1319,7 +1322,22 @@ footer{background:linear-gradient(160deg,#e8ecf4 0%,#f0f2f8 30%,#f5f0e5 65%,#f5e
     <p class="gal-hint">Arrastra para explorar</p>
   </section>
 
-  <div class="seam" style="--from:var(--bg);--to:var(--surface)" aria-hidden="true"></div>
+  <div class="seam" style="--from:var(--bg);--to:var(--paper)" aria-hidden="true"></div>
+
+  <!-- ÁLBUM -->
+  <section class="section-paper" style="text-align:center" aria-label="Álbum de fotos">
+    <div class="container">
+      <div class="eyebrow rv">Nuestro álbum</div>
+      <h2>Comparte tus <em>fotos</em></h2>
+      <p style="font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.7vw,19px);color:var(--ink-soft);line-height:1.8;max-width:520px;margin:26px auto 44px;">Ayúdanos a guardar cada instante de nuestro gran día. Escanea el código o toca el botón para subir las fotos y videos que tomes durante la celebración.</p>
+      <div class="album-qr-card rv">
+        <img src="album-qr.png" alt="Código QR para compartir fotos del evento" width="588" height="588" loading="lazy">
+        <a class="loc-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScBjQkMdoQm_hLYAAL3VT_iry3ZJcX0jokzfyQVeYcXF7BpZQ/viewform?usp=publish-editor" target="_blank" rel="noopener">Subir mis fotos</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam" style="--from:var(--paper);--to:var(--surface)" aria-hidden="true"></div>
 
   <!-- MESA DE REGALOS -->
   <section class="section-surface" style="padding:min(12vh,110px) 0 min(14vh,130px);text-align:center;" aria-label="Regalos">
