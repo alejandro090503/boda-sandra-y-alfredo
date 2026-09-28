@@ -1388,7 +1388,7 @@ footer{background:linear-gradient(160deg,#e8ecf4 0%,#f0f2f8 30%,#f5f0e5 65%,#f5e
 
           <div class="eyebrow">Confirmación</div>
           <h2 class="rsvp-title">Tu presencia <em>lo es</em> todo</h2>
-          <p class="rsvp-text">Deseamos contar con tu presencia, por favor confirma tu asistencia antes del <strong>01 de octubre de 2026</strong>. ¡Nos encantaría saber que estarás con nosotros!</p>
+          <p class="rsvp-text">Deseamos contar con tu presencia, por favor confirma tu asistencia antes del <strong>30 de octubre de 2026</strong>. ¡Nos encantaría saber que estarás con nosotros!</p>
 
           <div class="rsvp-divider">
             <svg class="rsvp-divider-heart" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
@@ -1417,7 +1417,7 @@ footer{background:linear-gradient(160deg,#e8ecf4 0%,#f0f2f8 30%,#f5f0e5 65%,#f5e
 
           <div class="rsvp-deadline">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5z"/></svg>
-            Fecha límite · 1 de octubre de 2026
+            Fecha límite · 30 de octubre de 2026
           </div>
 
           <!-- Aviso no niños -->
@@ -1475,7 +1475,7 @@ const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 (function(){
   var PANEL_API = 'https://panel-invitados.vercel.app/api/confirmar';
   var RSVP_URL  = 'https://boda-sandra-y-alfredo.vercel.app';
-  var DEADLINE  = new Date(2026, 9, 1, 23, 59, 59, 999);
+  var DEADLINE  = new Date(2026, 9, 30, 23, 59, 59, 999);
   var frozen    = Date.now() > DEADLINE.getTime();
   var params    = new URLSearchParams(window.location.search);
   var urlPara   = (params.get('para')  || '').trim();
